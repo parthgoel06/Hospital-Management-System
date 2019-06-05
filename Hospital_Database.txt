@@ -1,0 +1,15 @@
+create database hospital;
+use hospital;
+create table patients(ID_Number integer(10), Name varchar(30), Disease varchar(30), Age integer(3), Room_Number integer(4), Bill integer(10));
+insert into patients values(8092,'Ramesh','Cancer',30,1002,40000);
+insert into patients values(3130,'Pappu','Cardiac Arrest',45,2021,9000);
+insert into patients values(5838,'Raju','Broken Leg',21,2050,500);
+insert into patients values(5838,'Piyush','Loose Motion',20,3012,500);
+create table staff(ID_Number integer(10), Name varchar(30), Designation varchar(30), Age integer(3), Salary integer(10));
+insert into staff values(6348,'Lokesh','Sweeper',34,10000);
+insert into staff values(8309,'Bunty','Heart Specialist',45,150000);
+insert into staff values(29737,'Bulbul','Nurse',28,30000);
+create table donors(Name varchar(30), Blood_Type varchar(30), Age integer(3));
+insert into donors values('John','B+',27);
+insert into donors values('Chhotu','O+',41);
+insert into donors values('Ramu','AB-',66);
